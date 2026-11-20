@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M SHIRT | Wear Your Identity</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>M SHIRT</h2>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+<section class="hero" id="home">
+
+    <div class="hero-text">
+        <p class="subtitle">NEW COLLECTION 2026</p>
+
+        <h1>Wear Your<br>Identity.</h1>
+
+        <p class="description">
+            Express yourself through what you wear.
+            Discover your style with M SHIRT.
+        </p>
+
+        <a href="#collection" class="btn">
+            Explore Collection
+        </a>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/banner.jpg" alt="M SHIRT Collection">
+    </div>
+
+</section>
+<section class="featured" id="collection">
+
+    <div class="section-title">
+        <p>OUR COLLECTION</p>
+        <h2>Find Your Style</h2>
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="images/shirt1.jpg" alt="Casual Shirt">
+            <h3>Casual Shirt</h3>
+            <p>Rp150.000</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/shirt2.jpg" alt="Basic Shirt">
+            <h3>Basic Shirt</h3>
+            <p>Rp125.000</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/shirt3.jpg" alt="Oversized Shirt">
+            <h3>Oversized Shirt</h3>
+            <p>Rp175.000</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="about-preview" id="about">
+
+    <div class="about-content">
+
+        <p class="subtitle">WHO WE ARE</p>
+
+        <h2>More Than Just<br>A Shirt.</h2>
+
+        <p>
+            M SHIRT is a clothing brand that represents
+            individuality and self-expression through fashion.
+            We believe everyone has their own style and
+            deserves to express it freely.
+        </p>
+
+        <p>
+            Our goal is to provide simple, comfortable,
+            and stylish clothing for everyone.
+        </p>
+
+    </div>
+
+</section>
+<section class="contact-section" id="contact">
+
+    <div class="contact-info">
+        <p class="subtitle">GET IN TOUCH</p>
+
+        <h2>Let's Talk.</h2>
+
+        <p>
+            Have questions about our products or collections?
+            Feel free to contact us.
+        </p>
+
+        <div class="contact-detail">
+            <h3>WhatsApp</h3>
+            <p>0852 9199 1393</p>
+        </div>
+
+        <div class="contact-detail">
+            <h3>Instagram</h3>
+            <p>@mshirt.official</p>
+        </div>
+    </div>
+
+    <div class="contact-form">
+
+        <form id="whatsapp-form">
+
+            <label>Your Name</label>
+            <input type="text" id="nama"
+                placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="email"
+                placeholder="Enter your email" required>
+
+            <label>Message</label>
+            <textarea id="pesan"
+                placeholder="Write your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <h2>M SHIRT</h2>
+
+    <p>Wear Your Identity.</p>
+
+    <div class="footer-menu">
+        <a href="#home">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 M SHIRT. All Rights Reserved.
+    </p>
+
+</footer>
+<script>
+    document.getElementById("whatsapp-form").addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const nama = document.getElementById("nama").value;
+        const email = document.getElementById("email").value;
+        const pesan = document.getElementById("pesan").value;
+
+        const nomor = "6285291991393";
+
+        const teks = `Halo M SHIRT!
+
+Nama: ${nama}
+Email: ${email}
+
+Pesan:
+${pesan}`;
+
+        const url = `https://wa.me/${nomor}?text=${encodeURIComponent(teks)}`;
+
+        window.open(url, "_blank");
+
+    });
+</script>
+
+</body>
+</html>
